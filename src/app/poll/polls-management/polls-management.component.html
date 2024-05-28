@@ -1,0 +1,29 @@
+<!-- polls-management.component.html -->
+<div class="polls-container">
+  <button mat-raised-button color="primary" (click)="openDialog('create')">Create Poll</button>
+
+  <table mat-table [dataSource]="dataSource" matSort>
+
+    <!-- Columns definitions -->
+    <ng-container matColumnDef="title">
+      <th mat-header-cell *matHeaderCellDef mat-sort-header>Title</th>
+      <td mat-cell *matCellDef="let poll">{{ poll.title }}</td>
+    </ng-container>
+
+    <!-- Additional columns for edit and delete actions -->
+    <ng-container matColumnDef="actions">
+      <th mat-header-cell *matHeaderCellDef>Actions</th>
+      <td mat-cell *matCellDef="let poll">
+        <button mat-icon-button (click)="openDialog('edit', poll)">
+          <mat-icon>edit</mat-icon>
+        </button>
+        <button mat-icon-button (click)="confirmDelete(poll)">
+          <mat-icon>delete</mat-icon>
+        </button>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+  </table>
+</div>

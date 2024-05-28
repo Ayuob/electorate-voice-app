@@ -1,0 +1,21 @@
+<!-- elector-dashboard.component.html -->
+<div class="dashboard-container">
+  <mat-grid-list cols="3" rowHeight="300px" gutterSize="15px">
+    <mat-grid-tile *ngFor="let section of sections">
+      <mat-card>
+        <mat-card-header>
+          <mat-card-title>
+            <mat-icon>{{ section.icon }}</mat-icon>
+            {{ section.title }}
+          </mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+          {{ section.content }}
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="primary">View More</button>
+        </mat-card-actions>
+      </mat-card>
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

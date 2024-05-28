@@ -1,0 +1,39 @@
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  //background: url('assets/images/DALL·E 2024-05-01 20.38.04 - Create a square aspect ratio image suitable for a login screen background. The image should be an abstract, subtle civic-themed design that can induce.webp') no-repeat center center fixed;
+  background: #cccccc;
+  background-size: cover;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-control {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.links a {
+  display: block;
+  color: #0066cc;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.forgot-password,
+.register {
+  color: #0066cc;
+}
