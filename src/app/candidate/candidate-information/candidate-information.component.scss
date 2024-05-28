@@ -1,0 +1,24 @@
+.candidate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+mat-toolbar {
+  background: #fff;
+  color: #333;
+}
+
+mat-card {
+  transition: box-shadow 0.3s ease-in-out;
+
+  &:hover {
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+  }
+}
+
+.candidate-image {
+  background-size: cover;
+  background-position: center;
+}

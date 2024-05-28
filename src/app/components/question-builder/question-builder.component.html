@@ -1,0 +1,21 @@
+<!-- question-builder.component.html -->
+
+<div>
+  <h3>Create New Question</h3>
+
+  <label for="questionText">Question Text:</label>
+  <input id="questionText" [(ngModel)]="newQuestion.text" placeholder="Enter question text">
+
+  <label for="questionType">Question Type:</label>
+  <select id="questionType" [(ngModel)]="newQuestion.type">
+    <option *ngFor="let type of questionTypes" [value]="type">{{ type }}</option>
+  </select>
+
+  <!-- Options for multiple-choice questions -->
+  <div *ngIf="newQuestion.type === 'multiple-choice'">
+    <label for="questionOptions">Options (comma-separated):</label>
+    <input id="questionOptions" [(ngModel)]="newQuestion.options" placeholder="Option1, Option2, Option3">
+  </div>
+
+  <button (click)="addQuestion()">Add Question</button>
+</div>

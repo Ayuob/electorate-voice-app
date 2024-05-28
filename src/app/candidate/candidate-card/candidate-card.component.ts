@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, Input} from '@angular/core';
 
 @Component({
   selector: 'app-candidate-card',
@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./candidate-card.component.scss']
 })
 export class CandidateCardComponent {
+  @Input() candidate: any; // Assume 'candidate' is an object with properties such as name, party, bio, and imageUrl.
 
+  viewDetails(candidate: any) {
+    // This can navigate to a detailed view or emit an event to the parent component
+    console.log('Viewing details for:', this.candidate.name);
+  }
 }
+

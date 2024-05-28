@@ -1,0 +1,9 @@
+/* app.component.scss */
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; // ensures that the container takes at least the full height of the viewport
+  background-color: #eceff1; // a light grey background, adjust color as needed
+  padding: 20px; // Padding to ensure some space around the edges in smaller screens
+}

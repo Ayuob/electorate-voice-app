@@ -1,1 +1,21 @@
-<p>candidate-information works!</p>
+<mat-toolbar>
+  <mat-form-field appearance="outline">
+    <mat-label>Search Candidates</mat-label>
+    <input matInput placeholder="Name, Party, Issues..." [(ngModel)]="searchTerm">
+  </mat-form-field>
+</mat-toolbar>
+<!--<div class="candidate-grid">-->
+<!--  <app-candidate-card *ngFor="let candidate of candidates | filter: searchTerm" [candidate]="candidate"></app-candidate-card>-->
+<!--</div>-->
+
+<!-- candidate-information.component.html -->
+<div class="candidate-list">
+  <input type="text" [(ngModel)]="searchText" placeholder="Search candidates...">
+  <app-candidate-card *ngFor="let candidate of filteredCandidates | filter:searchText:['name','party','issues']" [candidate]="candidate"></app-candidate-card>
+</div>
+
+<!-- candidate-information.component.html -->
+<!--<input type="text" [(ngModel)]="searchText" (input)="search(searchText)" placeholder="Search candidates...">-->
+<!--<div class="candidate-list">-->
+<!--  <app-candidate-card *ngFor="let candidate of filteredCandidates" [candidate]="candidate"></app-candidate-card>-->
+<!--</div>-->

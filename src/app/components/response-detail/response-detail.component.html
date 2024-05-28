@@ -1,0 +1,15 @@
+<!-- response-detail.component.html -->
+
+<div *ngIf="formResponse">
+  <h2>{{ form.title }}</h2>
+
+  <p>{{ form.description }}</p>
+
+  <h3>User Response</h3>
+  <ul>
+    <li *ngFor="let answer of formResponse.answers">
+      {{ getQuestionText(answer.questionId) }}:
+      {{ answer.text }}
+    </li>
+  </ul>
+</div>

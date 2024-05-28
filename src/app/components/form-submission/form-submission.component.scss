@@ -1,0 +1,40 @@
+/* form-submission.component.css */
+
+/* Container styles */
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form details styles */
+h2 {
+  margin-bottom: 20px;
+}
+
+/* Form submission styles */
+form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}

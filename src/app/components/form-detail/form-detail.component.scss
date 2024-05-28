@@ -1,0 +1,32 @@
+/* form-detail.component.css */
+
+/* Container styles */
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form details styles */
+h2 {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+/* Questions list styles */
+h3 {
+  margin-top: 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}

@@ -1,0 +1,27 @@
+<!-- form-submission.component.html -->
+
+<div *ngIf="form">
+  <h2>{{ form.title }}</h2>
+
+  <form (ngSubmit)="submitForm()" >
+    <div *ngFor="let question of form.questions">
+      <label for="{{ question.id }}">{{ question.text }}</label>
+
+      <!-- Input based on question type -->
+      <ng-container *ngIf="question.type === 'text' || question.type === 'textarea'">
+        <input *ngIf="question.type === 'text'" type="text" id="{{ question.id }}" [(ngModel)]="formData[question.id]" required name="text">
+        <textarea *ngIf="question.type === 'textarea'" id="{{ question.id }}" [(ngModel)]="formData[question.id]" required name="textarea"></textarea>
+      </ng-container>
+
+      <!-- Radio buttons for multiple-choice questions -->
+      <ng-container *ngIf="question.type === 'multiple-choice'">
+        <div *ngFor="let option of question.options">
+          <input type="radio" [id]="option" [value]="option" [(ngModel)]="formData[question.id]" required [ngModelOptions]="{standalone: true}" >
+          <label [for]="option">{{ option }}</label>
+        </div>
+      </ng-container>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>

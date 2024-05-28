@@ -1,0 +1,14 @@
+<!-- form-detail.component.html -->
+
+<div *ngIf="form">
+  <h2>{{ form.title }}</h2>
+
+  <p>{{ form.description }}</p>
+
+  <h3>Form Questions</h3>
+  <ul>
+    <li *ngFor="let question of form.questions">
+      {{ question.text }} - {{ question.type }}
+    </li>
+  </ul>
+</div>

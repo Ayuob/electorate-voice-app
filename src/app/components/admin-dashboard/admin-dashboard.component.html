@@ -1,0 +1,16 @@
+<!-- admin-dashboard.component.html -->
+<mat-grid-list cols="3" rowHeight="300px" gutterSize="10px">
+  <mat-grid-tile *ngFor="let tile of tiles">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <mat-icon aria-hidden="false" aria-label="aruia label" >{{ tile.icon }}</mat-icon>
+          {{ tile.text }}
+        </mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        {{ tile.content }}
+      </mat-card-content>
+    </mat-card>
+  </mat-grid-tile>
+</mat-grid-list>

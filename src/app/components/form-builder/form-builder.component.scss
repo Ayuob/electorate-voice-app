@@ -1,0 +1,62 @@
+/* form-builder.component.css */
+
+/* Container styles */
+:host {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Form details styles */
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+textarea,
+select {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+}
+
+/* Add new question section styles */
+h3 {
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Display questions section styles */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+/* Remove button styles */
+button {
+  padding: 6px;
+  background-color: #ff3333;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+}
+
+/* Save button styles */
+button.save-button {
+  background-color: #2196f3;
+}

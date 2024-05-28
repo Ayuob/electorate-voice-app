@@ -37,3 +37,27 @@
 .register {
   color: #0066cc;
 }
+
+/* login.component.scss */
+.login-card {
+  background-color: #fff; // white background
+  border-radius: 8px; // rounded corners
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // subtle shadow for depth
+  padding: 20px; // internal spacing
+  max-width: 400px; // maximum width of the card
+  width: 100%; // ensures it takes up necessary space
+  box-sizing: border-box; // includes padding in width calculation
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  margin-bottom: 20px; // space between input fields
+}
+
+.login-button {
+  margin-top: 10px; // space above the login button
+}

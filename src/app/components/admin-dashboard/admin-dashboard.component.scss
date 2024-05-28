@@ -1,0 +1,95 @@
+mat-card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+mat-icon {
+  vertical-align: bottom;
+  padding-right: 8px;
+}
+
+/* Styles for the grid container */
+mat-grid-list {
+  width: 100%;
+  margin: 20px; /* Adds margin around the entire grid for better spacing */
+}
+
+/* Styles for each grid tile */
+mat-grid-tile {
+  transition: box-shadow 0.3s; /* Smooth transition for hover effects */
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.15); /* Subtle shadow on hover for better interaction feedback */
+  }
+}
+
+/* Styles for the cards within the grid tiles */
+mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Adds padding inside each card */
+  border-radius: 8px; /* Rounds the corners of the cards */
+}
+
+mat-card-header {
+  padding-bottom: 16px; /* Additional padding below the header */
+
+}
+
+mat-card-content {
+  padding-top: 16px; /* Additional padding above the content */
+  background-color: #f9f9f9; /* Sets a light background color for the content */
+}
+
+/* Style for icons within the card header */
+mat-icon {
+  vertical-align: middle; /* Aligns icon vertically with the text */
+  margin-right: 8px; /* Right margin for spacing between icon and text */
+  color: #0056b3; /* Sets the color of the icon */
+}
+mat-card-title {
+  font-size: 20px; /* Increases the font size of the title */
+  font-weight: 500; /* Sets the font weight of the title */
+  color: #f9f9f9 /* Sets the color of the title */
+}
+/* Styles for the grid container */
+mat-grid-list {
+  width: 100%;
+  margin: 20px; /* Adds margin around the entire grid for better spacing */
+}
+
+/* Styles for each grid tile */
+mat-grid-tile {
+  transition: box-shadow 0.3s; /* Smooth transition for hover effects */
+
+  &:hover {
+    box-shadow: 0px 6px 10px rgba(0,0,0,0.15); /* Subtle shadow on hover for better interaction feedback */
+  }
+}
+
+/* Styles for the cards within the grid tiles */
+mat-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px; /* Adds padding inside each card */
+  border-radius: 8px; /* Rounds the corners of the cards */
+}
+
+mat-card-header {
+  padding-bottom: 16px; /* Additional padding below the header */
+}
+
+mat-card-content {
+  padding-top: 16px; /* Additional padding above the content */
+}
+
+/* Style for icons within the card header */
+mat-icon {
+  vertical-align: middle; /* Aligns icon vertically with the text */
+  margin-right: 8px; /* Right margin for spacing between icon and text */
+}
